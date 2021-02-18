@@ -1,0 +1,40 @@
+package com.haiziwang.commodity.common;
+
+import com.haiziwang.commodity.utils.PropertyUtils;
+
+/**
+ * 常量类
+ */
+public class Constant {
+
+    public static final String  CLIENT_DESTINATION = PropertyUtils.get("client_destination");
+
+    public static final String  CANAL_USER_NAME = PropertyUtils.get("client_user_name");
+
+    public static final String  CANAL_PASSWORD = PropertyUtils.get("client_password");
+
+    public static final Integer  CLIENT_BATCH_SIZE = PropertyUtils.getInteger("client_batch_size");
+
+    public static final Integer  CLIENT_PROCESS_NUMBER = PropertyUtils.getInteger("client_process_number");
+
+    public static final String  CLIENT_RETRYTIMES = PropertyUtils.get("client_retrytimes");
+
+    public static final String  CLIENT_FILTER = PropertyUtils.get("client_filter");
+
+    public static final String  CLIENT_SCHEMA_NAME = PropertyUtils.get("client_schema_name");
+
+    public static final String  CLIENT_DEBUG= PropertyUtils.get("client_debug");
+
+    public static final Integer  DB_SHARDING= PropertyUtils.getInteger("db_sharding");
+
+
+    /**
+     * 孩子王数据源，默认数据源配置
+     */
+    public static final String DATASOURCE_HAIZIWANG = "dataSource_haiziwang";
+    /**
+     * 中间库数据源
+     */
+    public static final String DATASOURCE_CONVERSION = "dataSource_conversion";
+
+}

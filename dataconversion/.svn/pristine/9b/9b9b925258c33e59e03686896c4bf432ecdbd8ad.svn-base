@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haiziwang.commodity.mapper.HzwSkuAreaMapper">
+  <resultMap id="BaseResultMap" type="com.haiziwang.commodity.model.po.HzwSkuAreaPO">
+    <id column="Fskuareaid" jdbcType="BIGINT" property="fskuareaid" />
+    <result column="Fskuid" jdbcType="BIGINT" property="fskuid" />
+    <result column="Fareaid" jdbcType="INTEGER" property="fareaid" />
+    <result column="Fcooperatorsubaccountid" jdbcType="BIGINT" property="fcooperatorsubaccountid" />
+    <result column="Fcooperatorskuareacode" jdbcType="VARCHAR" property="fcooperatorskuareacode" />
+    <result column="Fcooperatorbarcode" jdbcType="VARCHAR" property="fcooperatorbarcode" />
+    <result column="Fpromotiontype" jdbcType="INTEGER" property="fpromotiontype" />
+    <result column="Fskuareapromotdesc" jdbcType="VARCHAR" property="fskuareapromotdesc" />
+    <result column="Fskuareaprice" jdbcType="INTEGER" property="fskuareaprice" />
+    <result column="Fskuareapreprice" jdbcType="INTEGER" property="fskuareapreprice" />
+    <result column="Fskuareacostprice" jdbcType="INTEGER" property="fskuareacostprice" />
+    <result column="Fskuareabusinesscost" jdbcType="INTEGER" property="fskuareabusinesscost" />
+    <result column="Fskuareaestimatedispatch" jdbcType="VARCHAR" property="fskuareaestimatedispatch" />
+    <result column="Fskuareaproperty" jdbcType="BIGINT" property="fskuareaproperty" />
+    <result column="Fskuareastate" jdbcType="TINYINT" property="fskuareastate" />
+    <result column="Fskuareaminbuycount" jdbcType="INTEGER" property="fskuareaminbuycount" />
+    <result column="Fskuareamaxbuycount" jdbcType="INTEGER" property="fskuareamaxbuycount" />
+    <result column="Fskuareaaddtime" jdbcType="TIMESTAMP" property="fskuareaaddtime" />
+    <result column="Fskuarealastupdatetime" jdbcType="TIMESTAMP" property="fskuarealastupdatetime" />
+    <result column="Fskuareabuymultiple" jdbcType="INTEGER" property="fskuareabuymultiple" />
+    <result column="Fskuareastorelogistictype" jdbcType="INTEGER" property="fskuareastorelogistictype" />
+    <result column="Fskuareafirstpublishtime" jdbcType="TIMESTAMP" property="fskuareafirstpublishtime" />
+    <result column="Fskuareapromotdescefftime" jdbcType="TIMESTAMP" property="fskuareapromotdescefftime" />
+    <result column="Fskuareapromotdescexptime" jdbcType="TIMESTAMP" property="fskuareapromotdescexptime" />
+    <result column="Fskuareabuyer" jdbcType="VARCHAR" property="fskuareabuyer" />
+    <result column="Fskuareasharecommission" jdbcType="INTEGER" property="fskuareasharecommission" />
+    <result column="Fentityid" jdbcType="INTEGER" property="fentityid" />
+    <result column="Fstoreid" jdbcType="VARCHAR" property="fstoreid" />
+    <result column="Fchannelid" jdbcType="INTEGER" property="fchannelid" />
+    <result column="Fdetail" jdbcType="VARCHAR" property="fdetail" />
+    <result column="Fworkstatecode" jdbcType="VARCHAR" property="fworkstatecode" />
+    <result column="Fcirculationmodecode" jdbcType="VARCHAR" property="fcirculationmodecode" />
+    <result column="Fskuareapostprice" jdbcType="INTEGER" property="fskuareapostprice" />
+    <result column="Fincatalog" jdbcType="INTEGER" property="fincatalog" />
+    <result column="Fareasort" jdbcType="INTEGER" property="fareasort" />
+    <result column="Fsaleslabelid" jdbcType="VARCHAR" property="fsaleslabelid" />
+    <result column="Fsaleslabelname" jdbcType="VARCHAR" property="fsaleslabelname" />
+    <result column="Fsaleslabelurl" jdbcType="VARCHAR" property="fsaleslabelurl" />
+    <result column="Fsalesstarttime" jdbcType="TIMESTAMP" property="fsalesstarttime" />
+    <result column="Fsalesendtime" jdbcType="TIMESTAMP" property="fsalesendtime" />
+    <result column="Fstorestate" jdbcType="INTEGER" property="fstorestate" />
+    <result column="Fsharecommissionbegintime" jdbcType="TIMESTAMP" property="fsharecommissionbegintime" />
+    <result column="Fsharecommissionendtime" jdbcType="TIMESTAMP" property="fsharecommissionendtime" />
+    <result column="Fcooperatorid" jdbcType="BIGINT" property="fcooperatorid" />
+    <result column="Fisinstall" jdbcType="INTEGER" property="fisinstall" />
+    <result column="Finstallcost" jdbcType="INTEGER" property="finstallcost" />
+    <result column="Fcontractid" jdbcType="VARCHAR" property="fcontractid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    Fskuareaid, Fskuid, Fareaid, Fcooperatorsubaccountid, Fcooperatorskuareacode, Fcooperatorbarcode,
+    Fpromotiontype, Fskuareapromotdesc, Fskuareaprice, Fskuareapreprice, Fskuareacostprice, 
+    Fskuareabusinesscost, Fskuareaestimatedispatch, Fskuareaproperty, Fskuareastate, 
+    Fskuareaminbuycount, Fskuareamaxbuycount, Fskuareaaddtime, Fskuarealastupdatetime, 
+    Fskuareabuymultiple, Fskuareastorelogistictype, Fskuareafirstpublishtime, Fskuareapromotdescefftime, 
+    Fskuareapromotdescexptime, Fskuareabuyer, Fskuareasharecommission, Fentityid, Fstoreid, 
+    Fchannelid, Fdetail, Fworkstatecode, Fcirculationmodecode, Fskuareapostprice, Fincatalog, 
+    Fareasort, Fsaleslabelid, Fsaleslabelname, Fsaleslabelurl, Fsalesstarttime, Fsalesendtime, 
+    Fstorestate, Fsharecommissionbegintime, Fsharecommissionendtime, Fcooperatorid, Fisinstall, 
+    Finstallcost, Fcontractid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from t_sku_area
+    where Fskuareaid = #{fskuareaid,jdbcType=BIGINT}
+  </select>
+
+</mapper>

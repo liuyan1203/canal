@@ -1,0 +1,13 @@
+package com.haiziwang.commodity.mapper;
+
+import com.haiziwang.commodity.annotation.DataSourceTypeAnnotation;
+import com.haiziwang.commodity.model.po.HzwSkuAreaPO;
+import org.springframework.stereotype.Repository;
+
+@DataSourceTypeAnnotation
+@Repository
+public interface HzwSkuAreaMapper {
+
+    HzwSkuAreaPO selectByPrimaryKey(Long fskuareaid);
+
+}

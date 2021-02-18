@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.haiziwang.commodity.mapper.HzwSkuPackInfoMapper">
+  <!--<resultMap id="BaseResultMap" type="com.haiziwang.commodity.model.po.HzwSkuPackInfoPO">-->
+    <!--<id column="Fskupackid" jdbcType="BIGINT" property="fskupackid" />-->
+    <!--<result column="Fskuid" jdbcType="BIGINT" property="fskuid" />-->
+    <!--<result column="Fskulocalcode" jdbcType="VARCHAR" property="fskulocalcode" />-->
+    <!--<result column="FpackId" jdbcType="INTEGER" property="fpackid" />-->
+    <!--<result column="Fbarcode" jdbcType="VARCHAR" property="fbarcode" />-->
+    <!--<result column="Fmeasureunit" jdbcType="VARCHAR" property="fmeasureunit" />-->
+    <!--<result column="Fpackrate" jdbcType="INTEGER" property="fpackrate" />-->
+    <!--<result column="Fprodarea" jdbcType="VARCHAR" property="fprodarea" />-->
+    <!--<result column="Fgoodsspec" jdbcType="VARCHAR" property="fgoodsspec" />-->
+    <!--<result column="Fiswholepack" jdbcType="INTEGER" property="fiswholepack" />-->
+    <!--<result column="Faddtime" jdbcType="TIMESTAMP" property="faddtime" />-->
+    <!--<result column="Flastupdatetime" jdbcType="TIMESTAMP" property="flastupdatetime" />-->
+  <!--</resultMap>-->
+  <sql id="Base_Column_List">
+    Fskupackid, Fskuid, Fskulocalcode, FpackId, Fbarcode, Fmeasureunit, Fpackrate, Fprodarea,
+    Fgoodsspec, Fiswholepack, Faddtime, Flastupdatetime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultType="com.haiziwang.commodity.model.po.HzwSkuPackInfoPO">
+    select
+    <include refid="Base_Column_List" />
+    from t_sku_pack_info
+    where Fskupackid = #{fskupackid,jdbcType=BIGINT}
+  </select>
+
+  <select id="selectBySKuId" parameterType="java.lang.Long" resultType="com.haiziwang.commodity.model.po.HzwSkuPackInfoPO">
+  select
+  <include refid="Base_Column_List" />
+  from t_sku_pack_info
+  where Fskuid = #{fskuid,jdbcType=BIGINT}
+</select>
+
+  <select id="selectAll" resultType="com.haiziwang.commodity.model.po.HzwSkuPackInfoPO">
+    select
+    <include refid="Base_Column_List" />
+    from t_sku_pack_info
+  </select>
+
+</mapper>
