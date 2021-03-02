@@ -1,0 +1,75 @@
+<configuration scan="true" scanPeriod=" 5 seconds">
+	<jmxConfigurator />
+	<property name="LOG_HOME" value="/data/logs/canal/commodity_es_spu_1" />
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{56} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<!--&lt;!&ndash; 文件日志：输出全部日志到文件 &ndash;&gt;-->
+	<!--<appender name="FILE"-->
+			  <!--class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+		<!--<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+			<!--<fileNamePattern>${LOG_HOME}/output.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+			<!--<maxHistory>7</maxHistory>-->
+		<!--</rollingPolicy>-->
+		<!--<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
+			<!--<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{56} - %msg%n-->
+			<!--</pattern>-->
+		<!--</encoder>-->
+	<!--</appender>-->
+
+	<!-- 错误日志：用于将错误日志输出到独立文件 -->
+	<appender name="ERROR_FILE"
+			  class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/error.%d{yyyy-MM-dd}.log</fileNamePattern>
+			<maxHistory>7</maxHistory>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{56} - %msg%n
+			</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>WARN</level>
+		</filter>
+	</appender>
+
+	<!-- 独立输出的同步日志 -->
+	<appender name="SYNC_FILE"  class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${LOG_HOME}/es_sync.%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+			<maxHistory>10</maxHistory>
+			<!--
+			  当日志文件超过maxFileSize指定的大小是，根据上面提到的%i进行日志文件滚动 注意此处配置SizeBasedTriggeringPolicy是无法实现按文件大小进行滚动的，必须配置timeBasedFileNamingAndTriggeringPolicy
+			  -->
+			<TimeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+				<maxFileSize>100MB</maxFileSize>
+			</TimeBasedFileNamingAndTriggeringPolicy>
+		</rollingPolicy>
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{56} - %msg%n
+			</pattern>
+		</encoder>
+
+	</appender>
+	
+	<appender name="ENTRY_LOG" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%msg</pattern>
+		</encoder>
+	</appender>
+	
+	<logger name="com.haiziwang.commodity.Main" additivity="false">
+        <level value="DEBUG" />
+        <appender-ref ref="SYNC_FILE" />
+    </logger>
+	
+	<root level="INFO">
+		<appender-ref ref="STDOUT"/>
+		<appender-ref ref="ERROR_FILE" />
+		<appender-ref ref="SYNC_FILE" />
+	</root>
+</configuration>

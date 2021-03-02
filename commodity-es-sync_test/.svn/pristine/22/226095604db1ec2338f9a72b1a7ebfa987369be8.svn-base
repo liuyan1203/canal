@@ -1,0 +1,95 @@
+package com.haiziwang.commodity.cpp.service;
+
+import com.haiziwang.commodity.common.Constant;
+import com.haiziwang.commodity.cpp.request.GetBrandByIdReq;
+import com.haiziwang.commodity.cpp.request.GetBrandsByIdReq;
+import com.haiziwang.commodity.cpp.response.Brand;
+import com.haiziwang.commodity.cpp.response.GetBrandByIdResp;
+import com.haiziwang.commodity.cpp.response.GetBrandsByIdResp;
+import com.haiziwang.commodity.utils.PerformanceUtil;
+import com.paipai.component.c2cplatform.WebStubCntl;
+import com.paipai.lang.uint32_t;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class CppBrandService {
+    private static final Logger logger = LoggerFactory.getLogger(CppBrandService.class);
+
+    /**
+     * 获取线上品牌（内存）
+     *
+     * @param brandId
+     * @return
+     */
+    public Brand getBrandsById(Long brandId) {
+        PerformanceUtil performanceUtil = new PerformanceUtil();
+        GetBrandsByIdResp resp = queryBrandsById(brandId);
+        logger.debug("GetBrandsByIdReq获取品牌耗时：[{}]", performanceUtil.PERFORM_TIME());
+        if (resp.getBrands() != null && resp.getBrands().keySet().size() > 0) {
+            uint32_t t = new uint32_t();
+            t.setValue(brandId);
+            return resp.getBrands().get(t);
+        }
+        return null;
+    }
+
+    /**
+     * 获取线上或线下品牌（查数据库）
+     *
+     * @param brandId
+     * @return
+     */
+    public Brand getBrandById(Long brandId, Boolean isErp) {
+        PerformanceUtil performanceUtil = new PerformanceUtil();
+        GetBrandByIdResp resp = queryBrandById(brandId, isErp);
+        logger.debug("GetBrandByIdReq获取品牌耗时：[{}]", performanceUtil.PERFORM_TIME());
+        return null == resp ? null : resp.getBrand();
+    }
+
+    private GetBrandByIdResp queryBrandById(Long brandId, Boolean isErp) {
+        WebStubCntl cppStub = new WebStubCntl();
+        cppStub.setPeerIPPort(Constant.CPP_SERVICE_IP, Constant.CPP_SERVICE_PORT);
+        cppStub.setTimeout_ms(5000); // 5秒超时
+        //cppStub.setDwUin(uid);
+
+        GetBrandByIdReq req = new GetBrandByIdReq();
+        if (isErp != null && isErp) {
+            req.setInReserve("1");
+        }
+        req.setBrandId(brandId);
+        GetBrandByIdResp resp = new GetBrandByIdResp();
+        try {
+            cppStub.invoke(req, resp, 1024 * 1024);
+        } catch (Exception ex) {
+            logger.error("getBrandById 获取品牌信息异常， brandId[{}] isErp[{}] ex[{}]", brandId, isErp, ex.getMessage());
+            return null;
+        }
+        return resp;
+    }
+
+    private GetBrandsByIdResp queryBrandsById(Long brandId) {
+        WebStubCntl cppStub = new WebStubCntl();
+        cppStub.setPeerIPPort(Constant.CPP_SERVICE_IP, Constant.CPP_SERVICE_PORT);
+        cppStub.setTimeout_ms(5000); // 5秒超时
+        //cppStub.setDwUin(uid);
+
+        GetBrandsByIdReq req = new GetBrandsByIdReq();
+        Set<uint32_t> query = new HashSet<>();
+        uint32_t t = new uint32_t();
+        t.setValue(brandId);
+        query.add(t);
+        req.setBrandId(query);
+        GetBrandsByIdResp resp = new GetBrandsByIdResp();
+        try {
+            cppStub.invoke(req, resp, 1024 * 1024);
+        } catch (Exception ex) {
+            logger.error("GetBrandsByIdReq 获取品牌信息异常， brandId[{}] isErp[{}] ex[{}]", brandId, ex.getMessage());
+            return null;
+        }
+        return resp;
+    }
+
+}

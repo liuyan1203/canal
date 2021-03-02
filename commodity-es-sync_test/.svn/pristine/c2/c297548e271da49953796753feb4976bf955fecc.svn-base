@@ -1,0 +1,75 @@
+package com.haiziwang.pmc.model.po;
+
+import com.haiziwang.pmc.constant.ErrorEnum;
+
+import java.io.Serializable;
+
+
+public class AppResp<E> implements Serializable {
+    private E data;
+
+    public void setData(E data) {
+        this.data = data;
+    }
+
+    private Boolean success;
+    private Long errno;
+    private String errmsg = new String();
+
+    public AppResp() {
+        ErrorEnum em = ErrorEnum.SUCCESS;
+        this.errno = em.getErrno();
+        this.errmsg = em.getErrmsg();
+        this.success = true;
+    }
+
+    public AppResp(ErrorEnum em) {
+        this.errno = em.getErrno();
+        this.errmsg = em.getErrmsg();
+        this.success = true;
+    }
+
+    public AppResp(Long resultCode, String msg) {
+        this.errno = resultCode;
+        this.errmsg = msg;
+        this.success = true;
+    }
+
+    public AppResp(Long resultCode, String msg, E obj) {
+        this.errno = resultCode;
+        this.errmsg = msg;
+        this.data = obj;
+        this.success = true;
+    }
+
+    public AppResp(ErrorEnum em, E obj) {
+        this.errno = em.getErrno();
+        this.errmsg = em.getErrmsg();
+        this.success = true;
+        this.data = obj;
+    }
+
+    public AppResp(E obj) {
+        ErrorEnum em = ErrorEnum.SUCCESS;
+        this.errno = em.getErrno();
+        this.errmsg = em.getErrmsg();
+        this.success = true;
+        this.data = obj;
+    }
+
+    public Boolean getSuccess() {
+        return this.success;
+    }
+
+    public Long getErrno() {
+        return errno;
+    }
+
+    public String getErrmsg() {
+        return errmsg;
+    }
+
+    public E getData() {
+        return data;
+    }
+}
