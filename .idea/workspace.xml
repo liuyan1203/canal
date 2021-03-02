@@ -1,0 +1,1033 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bee6dcee-1d5c-4fad-ba9c-e859ac6cf8fe" name="Default Changelist" comment="修改packinfo补偿逻辑">
+      <change beforePath="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/service/CppCategaryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/service/CppCategaryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/PushESbyPkeyScheduledExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/PushESbyPkeyScheduledExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuAreaMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuAreaMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataconversion_test/src/main/resources/client.properties" beforeDir="false" afterPath="$PROJECT_DIR$/dataconversion_test/src/main/resources/client.properties" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/commodity-es-sync_test/target/" />
+    <ignored path="$PROJECT_DIR$/dataconversion_test/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/service/CppCategaryService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/HashMap.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7812">
+              <caret line="406" column="22" selection-start-line="406" selection-start-column="18" selection-end-line="406" selection-end-column="22" />
+              <folding>
+                <element signature="e#19103#19104#0" expanded="true" />
+                <element signature="e#19161#19162#0" expanded="true" />
+                <element signature="e#21108#21109#0" expanded="true" />
+                <element signature="e#21135#21136#0" expanded="true" />
+                <element signature="e#66928#66929#0" expanded="true" />
+                <element signature="e#66985#66986#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Map.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2331">
+              <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/strategy/table/CommonStrategyImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9723">
+              <caret line="495" column="65" selection-start-line="495" selection-start-column="65" selection-end-line="495" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/model/po/HzwSkuPO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/hzwSkuMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/HzwSkuAreaMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1533">
+              <caret line="73" column="36" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuAreaMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/file/area.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>entit</find>
+      <find>entity</find>
+      <find>readTimeout</find>
+      <find>InvokerMeta</find>
+      <find>brand</find>
+      <find>Fbrandid</find>
+      <find>getSkuById</find>
+      <find>deleteByFskuid</find>
+      <find>getSimpleSkuById</find>
+      <find>PerformanceUtil</find>
+      <find>A001IPs</find>
+      <find>categaryIPs</find>
+      <find>cmd</find>
+      <find>A001</find>
+      <find>udsert</find>
+      <find>selectAll</find>
+      <find>hzwSkuAreaMapper</find>
+      <find>time</find>
+      <find>DefaultHttpClientConnectionOperator</find>
+      <find>selectBySpuId</find>
+      <find>specialHandler</find>
+      <find>.toString()</find>
+      <find>Fincatalog</find>
+      <find>getFskuareaproperty</find>
+      <find>skuextcode</find>
+      <find>code</find>
+      <find>localcode</find>
+      <find>Queue</find>
+      <find>hash</find>
+      <find>putV</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+      <replace>A016IPs</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/model/po/es/CollectionResp.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/common/ErrorEnum.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/model/po/es/EsEntity.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/model/po/es/Resp.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/model/po/es/AppResp.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/model/po/es/EsInputParam.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/model/po/es/EsFilterPo.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/model/po/es/EsQueryPo.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/ESPackInfoScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/request/BrandFilter.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/response/GetBrandListResp.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/request/GetBrandListReq.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/file/packinfo.txt" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/canal/CanalClient.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/common/Constant.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/ConversionSkuMapper.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/convisionSkuMapper.xml" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/GetIPS.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/GetEsfIPScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/mapper/ConversionSpuMapper.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/mapper/convisionSpuMapper.xml" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/common/Constant.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/PackInfoScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/canal/CanalClient.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/SpuScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/client.properties" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/UpdateEsfIPScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/CachePeerIp.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/ConversionSkuPackInfoMapper.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/conversionSkuPackInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuPackInfoMapper.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/HzwSkuPackInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/task/PackInfoScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/utils/Test.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/utils/TMQMessageUtil.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/spring-schadule.xml" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/file/pkey.txt" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/strategy/table/CommonStrategyImpl.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/service/CppBrandService.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/PushESbyPkeyScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/task/AreaAllScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuMapper.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/HzwSkuAreaMapper.xml" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/hzwSkuMapper.xml" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/file/area.txt" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/client.properties" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/strategy/table/SkuAreaStrategyImpl.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/resources/spring-schadule.xml" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/task/AreaScheduledExecutor.java" />
+        <option value="$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuAreaMapper.java" />
+        <option value="$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/service/CppCategaryService.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\javasoft\repository\repository" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../apache-maven-3.3.3/apache-maven-3.3.3" />
+        <option name="userSettingsFile" value="D:\javasoft\apache-maven-3.3.3\apache-maven-3.3.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="commodity-es-sync" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dataconversion" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="dataconversion" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="32" />
+    <option name="y" value="10" />
+    <option name="width" value="1039" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1614343997832" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../mallback/pmc/stable" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javasoft\workspace-hzw\hzwcommodity\test\dataconversion_test\src\main\resources\file" />
+      <recent name="D:\javasoft\workspace-hzw\hzwcommodity\test\commodity-es-sync_test\src\main\resources\file" />
+      <recent name="D:\javasoft\workspace-hzw\hzwcommodity\test\commodity-es-sync_test\src\main\java\com\haiziwang\commodity\model\po\es" />
+      <recent name="D:\javasoft\workspace-hzw\hzwcommodity\test\commodity-es-sync_test\src\main\java\com\haiziwang\commodity\model\po" />
+      <recent name="D:\javasoft\workspace-hzw\hzwcommodity\test\dataconversion_test\src\main\resources\mapper" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.haiziwang.commodity.task" />
+      <recent name="com.haiziwang.commodity.cpp.request" />
+      <recent name="com.haiziwang.commodity.cpp.response" />
+      <recent name="com.haiziwang.commodity.common" />
+      <recent name="com.haiziwang.commodity.utils" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\javasoft\workspace-hzw\hzwcommodity\test\dataconversion_test\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CppCategaryService">
+    <configuration name="CanalClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haiziwang.commodity.canal.CanalClient" />
+      <module name="dataconversion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.haiziwang.commodity.canal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CanalClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haiziwang.commodity.canal.CanalClient" />
+      <module name="commodity-es-sync" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.haiziwang.commodity.canal.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CppCategaryService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haiziwang.commodity.cpp.service.CppCategaryService" />
+      <module name="commodity-es-sync" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.haiziwang.commodity.cpp.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haiziwang.commodity.utils.Test" />
+      <module name="dataconversion" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.haiziwang.commodity.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateEsfIPScheduledExecutor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.haiziwang.commodity.task.UpdateEsfIPScheduledExecutor" />
+      <module name="commodity-es-sync" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.haiziwang.commodity.task.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CppCategaryService" />
+        <item itemvalue="Application.CanalClient (1)" />
+        <item itemvalue="Application.CanalClient" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.UpdateEsfIPScheduledExecutor" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\dell\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\javasoft\workspace-hzw\hzwcommodity\test\commodity-es-sync_test" />
+          <option name="myCopyRoot" value="D:\javasoft\workspace-hzw\hzwcommodity\test\commodity-es-sync_test" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\javasoft\workspace-hzw\hzwcommodity\test\dataconversion_test" />
+          <option name="myCopyRoot" value="D:\javasoft\workspace-hzw\hzwcommodity\test\dataconversion_test" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\javasoft\workspace-hzw\hzwcommodity\test\commodity-es-sync_test" />
+          <option name="myCopyRoot" value="D:\javasoft\workspace-hzw\hzwcommodity\test\commodity-es-sync_test" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="D:\javasoft\workspace-hzw\hzwcommodity\test\dataconversion_test" />
+          <option name="myCopyRoot" value="D:\javasoft\workspace-hzw\hzwcommodity\test\dataconversion_test" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bee6dcee-1d5c-4fad-ba9c-e859ac6cf8fe" name="Default Changelist" comment="" />
+      <created>1596532276644</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596532276644</updated>
+      <workItem from="1596532279727" duration="119000" />
+      <workItem from="1597199601916" duration="408000" />
+      <workItem from="1597973727537" duration="2517000" />
+      <workItem from="1598320757834" duration="191002000" />
+      <workItem from="1599894524731" duration="7648000" />
+      <workItem from="1600132730698" duration="93140000" />
+      <workItem from="1602208366550" duration="6115000" />
+      <workItem from="1602724712950" duration="60719000" />
+      <workItem from="1603683137009" duration="57699000" />
+      <workItem from="1604280838954" duration="584000" />
+      <workItem from="1609150822098" duration="9377000" />
+      <workItem from="1612679560104" duration="1020000" />
+      <workItem from="1612778903887" duration="643000" />
+      <workItem from="1612780093624" duration="12984000" />
+      <workItem from="1613701433577" duration="924000" />
+      <workItem from="1613703377291" duration="4487000" />
+      <workItem from="1614562474241" duration="586000" />
+    </task>
+    <task id="LOCAL-00001" summary="同步sku_erp.title">
+      <created>1598340160459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598340160459</updated>
+    </task>
+    <task id="LOCAL-00002" summary="增加补偿任务，修改packinfo字段类型">
+      <created>1599102079158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599102079158</updated>
+    </task>
+    <task id="LOCAL-00003" summary="增加补偿任务，修改packinfo字段类型">
+      <created>1599102241444</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599102241444</updated>
+    </task>
+    <task id="LOCAL-00004" summary="增加补偿任务，修改线下名称">
+      <created>1599552894278</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599552894278</updated>
+    </task>
+    <task id="LOCAL-00005" summary="去除警告">
+      <created>1599553847576</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1599553847576</updated>
+    </task>
+    <task id="LOCAL-00006" summary="增加补偿任务，通过esf方式获取服务IP">
+      <created>1600826601577</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1600826601577</updated>
+    </task>
+    <task id="LOCAL-00007" summary="增加补偿任务，增加packinfo及area价格字段同步逻辑">
+      <created>1600826777406</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600826777406</updated>
+    </task>
+    <task id="LOCAL-00008" summary="修改packinfo补偿逻辑">
+      <created>1603180833498</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603180833498</updated>
+    </task>
+    <task id="LOCAL-00009" summary="优化异常日志">
+      <created>1603787818658</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603787818659</updated>
+    </task>
+    <task id="LOCAL-00010" summary="area补偿逻辑">
+      <created>1603962004724</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603962004724</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="449972000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29744136" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.27874187" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.22535211" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.5763814" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.55856836" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.06076759" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20042644" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.31310943" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.28277355" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.5763814" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Spring" order="12" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.55904657" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" visible="true" weight="0.11673774" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="SciView" order="8" />
+      <window_info anchor="right" id="Database" order="9" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="同步sku_erp.title" />
+    <MESSAGE value="增加补偿任务，修改packinfo字段类型" />
+    <MESSAGE value="增加补偿任务，修改线下名称" />
+    <MESSAGE value="去除警告" />
+    <MESSAGE value="增加补偿任务，通过esf方式获取服务IP" />
+    <MESSAGE value="增加补偿任务，增加packinfo及area价格字段同步逻辑" />
+    <MESSAGE value="修改packinfo补偿逻辑" />
+    <MESSAGE value="优化异常日志" />
+    <MESSAGE value="area补偿逻辑" />
+    <option name="LAST_COMMIT_MESSAGE" value="area补偿逻辑" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/task/PackInfoScheduledExecutor.java</url>
+          <line>231</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/task/AreaAllScheduledExecutor.java</url>
+          <line>114</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/PushESbyPkeyScheduledExecutor.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/strategy/table/TableStrategy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/ConversionSkuPackInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/common/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuPackInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/annotation/DataSourceTypeAnnotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="13" column="56" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/conversionSkuPackInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="230" selection-start-line="230" selection-end-line="230" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/utils/PerformanceUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/HzwSkuPackInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="94" column="43" lean-forward="true" selection-start-line="94" selection-start-column="43" selection-end-line="94" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/task/PackInfoScheduledExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4725">
+          <caret line="250" column="34" selection-start-line="250" selection-start-column="34" selection-end-line="250" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/convisionSkuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7056">
+          <caret line="336" column="76" selection-start-line="336" selection-start-column="70" selection-end-line="336" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/hzwSkuErpMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/net/HttpURLConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="303" column="45" selection-start-line="303" selection-start-column="41" selection-end-line="303" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../repository/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar!/org/apache/http/conn/HttpClientConnectionOperator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../repository/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar!/org/apache/http/impl/conn/DefaultHttpClientConnectionOperator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="16" selection-end-line="73" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../repository/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar!/org/apache/http/impl/client/CloseableHttpClient.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="97" column="39" selection-start-line="97" selection-start-column="32" selection-end-line="97" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="58" column="75" lean-forward="true" selection-start-line="58" selection-start-column="75" selection-end-line="58" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/utils/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1146">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#212#213#0" expanded="true" />
+            <element signature="e#255#256#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/strategy/table/CommonStrategyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="777">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/dao/SpuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="642">
+          <caret line="41" column="108" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="41" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/dao/SkuDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="65" column="83" selection-start-line="65" selection-start-column="83" selection-end-line="65" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/SpuScheduledExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1136">
+          <caret line="175" column="31" selection-start-line="175" selection-start-column="17" selection-end-line="175" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/file/packinfo.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/utils/TMQMessageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="84" column="74" selection-start-line="84" selection-start-column="74" selection-end-line="84" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/canal/CanalClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="83" column="27" selection-start-line="83" selection-start-column="27" selection-end-line="83" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/client.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/file/pkey.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/model/dto/EsCommodityDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2043">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/resources/spring-schadule.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/service/CppBrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="68" column="95" selection-start-line="68" selection-start-column="95" selection-end-line="68" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/PushESbyPkeyScheduledExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="51" column="23" lean-forward="true" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/task/ScheduledExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="46" column="30" lean-forward="true" selection-start-line="46" selection-start-column="30" selection-end-line="46" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../../repository/repository/org/springframework/spring-context/4.3.19.RELEASE/spring-context-4.3.19.RELEASE.jar!/org/springframework/scheduling/support/ScheduledMethodRunnable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/canal/CanalClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="50" column="17" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/spring-schadule.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/strategy/table/SkuAreaStrategyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3990">
+          <caret line="206" column="19" selection-start-line="206" selection-start-column="19" selection-end-line="206" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/task/AreaAllScheduledExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/client.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/task/AreaScheduledExecutor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3906">
+          <caret line="213" column="48" selection-start-line="213" selection-start-column="48" selection-end-line="213" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/strategy/table/SkuStrategyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4284">
+          <caret line="216" column="41" selection-start-line="216" selection-start-column="41" selection-end-line="216" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/cpp/service/CppCategaryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="81" column="10" selection-start-line="81" selection-start-column="10" selection-end-line="81" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7812">
+          <caret line="406" column="22" selection-start-line="406" selection-start-column="18" selection-end-line="406" selection-end-column="22" />
+          <folding>
+            <element signature="e#19103#19104#0" expanded="true" />
+            <element signature="e#19161#19162#0" expanded="true" />
+            <element signature="e#21108#21109#0" expanded="true" />
+            <element signature="e#21135#21136#0" expanded="true" />
+            <element signature="e#66928#66929#0" expanded="true" />
+            <element signature="e#66985#66986#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_231/src.zip!/java/util/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2331">
+          <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commodity-es-sync_test/src/main/java/com/haiziwang/commodity/strategy/table/CommonStrategyImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9723">
+          <caret line="495" column="65" selection-start-line="495" selection-start-column="65" selection-end-line="495" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/model/po/HzwSkuPO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="26" column="34" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/hzwSkuMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/mapper/HzwSkuAreaMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1533">
+          <caret line="73" column="36" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuAreaMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/java/com/haiziwang/commodity/mapper/HzwSkuMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataconversion_test/src/main/resources/file/area.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -1,0 +1,22 @@
+# �ͻ�������
+client_batch_size=5120
+client_debug=true
+client_destination=hzw_commodity_conversion
+client_user_name=canal
+client_password=canal
+client_process_number=1
+client_retrytimes=3
+client_filter=commodity_spu\\..*
+client_schema_name=commodity_spu
+
+db_sharding=2
+db_sharding_area=4
+
+# 是否全字段更新  1是， 0否(目前包括sku_erp)
+full_mode=0
+# 是否开始定时任务，1开启 0不开启
+open_schedule = 0
+
+
+
+

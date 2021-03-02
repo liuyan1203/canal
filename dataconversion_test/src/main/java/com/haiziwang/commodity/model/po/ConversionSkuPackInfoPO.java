@@ -1,0 +1,43 @@
+package com.haiziwang.commodity.model.po;
+
+import lombok.Data;
+
+import java.util.Date;
+
+@Data
+public class ConversionSkuPackInfoPO {
+    private Long Fid;
+
+    private Integer Fplatformid;
+
+    private String Fspuid;
+
+    private Long Fskuid;
+
+    private Integer Fpackindex;
+
+    private String Fbarcode;
+
+    private Integer Fiswholepack;
+
+    private String Fpackrate;
+
+    private String Fmeasureunit;
+
+    private Long Fskuweight;
+
+    private Integer Fskunetweight;
+
+    private Integer Fskuvolume;
+
+    private Integer Fskusizex;
+
+    private Integer Fskusizey;
+
+    private Integer Fskusizez;
+
+    private Date Faddtime;
+
+    private Date Flastupdatetime;
+
+}
